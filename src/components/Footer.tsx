@@ -1,27 +1,5 @@
-import { Code2, Mail } from "lucide-react";
-import zaloIcon from "@/assets/zalo.png";
-import threadIcon from "@/assets/thread.png";
-
-const contactLinks = [
-  { 
-    name: "Zalo", 
-    href: "https://zalo.me/0911462090", 
-    iconImg: zaloIcon,
-    description: "Chat trực tiếp"
-  },
-  { 
-    name: "Threads", 
-    href: "https://www.threads.com/@dev.englishpro", 
-    iconImg: threadIcon,
-    description: "@englishforglobaldevs"
-  },
-  { 
-    name: "Email", 
-    href: "mailto:devenglishpro@gmail.com", 
-    icon: Mail,
-    description: "devenglishpro@gmail.com"
-  },
-];
+import { Code2 } from "lucide-react";
+import { contactLinks } from "@/data/const";
 
 const Footer = () => {
   return (

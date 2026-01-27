@@ -81,7 +81,7 @@ const HeroSection = () => {
           {/* Trust indicators */}
           <div className="flex flex-wrap justify-center gap-8 mt-16 pt-8 border-t border-border/50 animate-fade-up" style={{ animationDelay: "0.6s" }}>
             <div className="text-center">
-              <div className="text-3xl font-bold text-foreground">500+</div>
+              <div className="text-3xl font-bold text-foreground">100+</div>
               <div className="text-sm text-muted-foreground">Dev/BA/Designer đã học</div>
             </div>
             <div className="text-center">
@@ -89,7 +89,7 @@ const HeroSection = () => {
               <div className="text-sm text-muted-foreground">Tự tin hơn sau khóa</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-foreground">30%</div>
+              <div className="text-3xl font-bold text-foreground">35%</div>
               <div className="text-sm text-muted-foreground">Tăng rate trung bình</div>
             </div>
           </div>

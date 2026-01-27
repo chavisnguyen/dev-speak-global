@@ -1,19 +1,13 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Code2, Menu, X, Mail } from "lucide-react";
-import zaloIcon from "@/assets/zalo.png";
-import threadIcon from "@/assets/thread.png";
+import { contactLinks } from "@/data/const";
 
 const navLinks = [
   { name: "Khóa học", href: "#courses" },
   { name: "Học viên", href: "#students" },
   { name: "Bảng giá", href: "#pricing" },
-];
-
-const contactLinks = [
-  { name: "Zalo", href: "https://zalo.me/0123456789", iconImg: zaloIcon },
-  { name: "Threads", href: "https://threads.net/@englishforglobaldevs", iconImg: threadIcon },
-  { name: "Email", href: "mailto:hello@englishforglobaldevs.com", icon: Mail },
 ];
 
 const Navbar = () => {
@@ -24,11 +18,11 @@ const Navbar = () => {
       <div className="container px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2">
             <Code2 className="w-6 h-6 text-primary" />
             <span className="font-bold text-lg hidden sm:block">English for Global Devs</span>
             <span className="font-bold text-lg sm:hidden">E4GD</span>
-          </a>
+          </Link>
 
           {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-8">

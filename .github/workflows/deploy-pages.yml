@@ -1,4 +1,4 @@
-# Deploy landing page lên GitHub Pages
+# Deploy landing page lên GitHub Pages (chỉ dùng custom domain)
 # Cần bật: Repo → Settings → Pages → Source = "GitHub Actions"
 
 name: Deploy to GitHub Pages
@@ -37,7 +37,7 @@ jobs:
       - name: Build
         run: pnpm build
         env:
-          VITE_BASE_PATH: /${{ github.event.repository.name }}/
+          VITE_BASE_PATH: /
 
       - uses: actions/upload-pages-artifact@v3
         with:

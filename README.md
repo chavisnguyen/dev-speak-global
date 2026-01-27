@@ -34,3 +34,14 @@ Repo có sẵn GitHub Action để deploy lên GitHub Pages khi push lên nhánh
 Trang sẽ có dạng: `https://<username>.github.io/<repository-name>/`
 
 **Lưu ý:** Nếu dùng GitHub Pages cho project site (không phải user site), base URL đã được set qua biến môi trường `VITE_BASE_PATH` trong workflow để asset load đúng.
+
+### Custom domain
+
+Khi dùng **custom domain** (vd: `https://devenglish.com/`), site chạy ở root nên cần build với base `/`:
+
+1. Vào **Settings → Pages** → nhập **Custom domain** → Save.
+2. Cấu hình DNS tại nhà đăng ký domain (CNAME trỏ `www` tới `username.github.io`, hoặc A record theo [hướng dẫn GitHub](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)).
+3. Trong repo: **Settings → Secrets and variables → Actions** → **Variables** → **New repository variable**:
+   - Name: `VITE_BASE_PATH`
+   - Value: `/`
+4. Chạy lại workflow (push hoặc Run workflow) để deploy với base `/`.
