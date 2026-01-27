@@ -18,22 +18,22 @@ const HeroSection = () => {
 
       <div className="container relative z-10 px-4 py-20 md:py-32">
         <div className="max-w-5xl mx-auto text-center">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-secondary/50 backdrop-blur-sm mb-8 animate-fade-up">
-            <Code2 className="w-4 h-4 text-primary" />
-            <span className="text-sm text-muted-foreground">Khóa học tiếng Anh chuyên biệt cho Dev / BA / Designer</span>
+          {/* Badge: Khóa học trên, 1 buổi test + học thử dưới */}
+          <div className="inline-flex flex-col items-center gap-3 mb-8 animate-fade-up">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-secondary/50 backdrop-blur-sm">
+              <Code2 className="w-4 h-4 text-primary" />
+              <span className="text-sm text-muted-foreground">Khóa học tiếng Anh chuyên biệt cho Dev / BA / Designer</span>
+            </div>
+            <div className="inline-flex items-center gap-3 px-6 py-3 rounded-2xl bg-accent/20 border-2 border-accent text-accent font-bold animate-pulse-glow">
+              <span className="text-lg">🎁</span>
+              <span>1 buổi test trình độ + học thử MIỄN PHÍ</span>
+            </div>
           </div>
 
-          {/* Free Trial Banner */}
-          <div className="inline-flex items-center gap-3 px-6 py-3 rounded-2xl bg-accent/20 border-2 border-accent text-accent font-bold mb-6 animate-fade-up animate-pulse-glow">
-            <span className="text-lg">🎁</span>
-            <span>1 buổi test trình độ + học thử MIỄN PHÍ</span>
-          </div>
-
-          {/* Main headline */}
+          {/* Main headline - bám ngữ cảnh: stand-up, phỏng vấn, client */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-            <span className="text-foreground">Code tốt nhưng </span>
-            <span className="text-gradient">không có tiếng nói?</span>
+            <span className="text-foreground">Stand-up, phỏng vấn, client — </span>
+            <span className="text-gradient">đều cần tiếng Anh.</span>
           </h1>
 
           {/* Sub-headline */}
