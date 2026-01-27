@@ -104,9 +104,11 @@ const PricingSection = () => {
                 </p>
               </div>
 
-              <Button variant={course.variant} className="w-full">
-                Đăng ký ngay
-                <ArrowRight className="w-4 h-4" />
+              <Button variant={course.variant} className="w-full" asChild>
+                <a href="#consult">
+                  Đăng ký ngay
+                  <ArrowRight className="w-4 h-4" />
+                </a>
               </Button>
             </div>
           ))}
@@ -128,8 +130,8 @@ const PricingSection = () => {
             <div className="text-center md:text-right flex-shrink-0">
               <div className="text-sm text-muted-foreground line-through">3.360.000đ</div>
               <div className="text-3xl font-bold text-accent">3.024.000đ</div>
-              <Button variant="hero" className="mt-4">
-                Đăng ký combo
+              <Button variant="hero" className="mt-4" asChild>
+                <a href="#consult">Đăng ký combo</a>
               </Button>
             </div>
           </div>
