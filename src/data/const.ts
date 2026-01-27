@@ -5,7 +5,7 @@ import { Mail } from "lucide-react";
 export const contactLinks = [
     {
         name: "Zalo",
-        href: "https://zalo.me/0911462090",
+        href: "https://zalo.me/84911462090",
         iconImg: zaloIcon,
         description: "Chat trực tiếp"
     },
