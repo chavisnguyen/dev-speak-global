@@ -21,7 +21,13 @@ const HeroSection = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-secondary/50 backdrop-blur-sm mb-8 animate-fade-up">
             <Code2 className="w-4 h-4 text-primary" />
-            <span className="text-sm text-muted-foreground">Khóa học tiếng Anh chuyên biệt cho Developer</span>
+            <span className="text-sm text-muted-foreground">Khóa học tiếng Anh chuyên biệt cho Dev / BA / Designer</span>
+          </div>
+
+          {/* Free Trial Banner */}
+          <div className="inline-flex items-center gap-3 px-6 py-3 rounded-2xl bg-accent/20 border-2 border-accent text-accent font-bold mb-6 animate-fade-up animate-pulse-glow">
+            <span className="text-lg">🎁</span>
+            <span>1 buổi test trình độ + học thử MIỄN PHÍ</span>
           </div>
 
           {/* Main headline */}
@@ -72,7 +78,7 @@ const HeroSection = () => {
           <div className="flex flex-wrap justify-center gap-8 mt-16 pt-8 border-t border-border/50 animate-fade-up" style={{ animationDelay: "0.6s" }}>
             <div className="text-center">
               <div className="text-3xl font-bold text-foreground">500+</div>
-              <div className="text-sm text-muted-foreground">Developer đã học</div>
+              <div className="text-sm text-muted-foreground">Dev/BA/Designer đã học</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-foreground">95%</div>
