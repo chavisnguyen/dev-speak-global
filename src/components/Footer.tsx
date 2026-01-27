@@ -5,21 +5,21 @@ import threadIcon from "@/assets/thread.png";
 const contactLinks = [
   { 
     name: "Zalo", 
-    href: "https://zalo.me/0123456789", 
+    href: "https://zalo.me/0911462090", 
     iconImg: zaloIcon,
     description: "Chat trực tiếp"
   },
   { 
     name: "Threads", 
-    href: "https://threads.net/@englishforglobaldevs", 
+    href: "https://www.threads.com/@dev.englishpro", 
     iconImg: threadIcon,
     description: "@englishforglobaldevs"
   },
   { 
     name: "Email", 
-    href: "mailto:hello@englishforglobaldevs.com", 
+    href: "mailto:devenglishpro@gmail.com", 
     icon: Mail,
-    description: "hello@englishforglobaldevs.com"
+    description: "devenglishpro@gmail.com"
   },
 ];
 
