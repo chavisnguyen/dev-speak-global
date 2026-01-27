@@ -1,8 +1,8 @@
 import { Check, X } from "lucide-react";
 
 const forYou = [
-  "Developer muốn làm việc với team hoặc client quốc tế",
-  "Đã có nền tảng code, chỉ cần bổ sung English đúng ngữ cảnh",
+  "Dev/BA/Designer muốn làm việc với team hoặc client quốc tế",
+  "Đã có nền tảng chuyên môn, chỉ cần bổ sung English đúng ngữ cảnh",
   "Muốn tăng rate, tăng cơ hội, giảm stress trong công việc",
   "Sẵn sàng đầu tư thời gian để học và thực hành",
   "Nghiêm túc về sự nghiệp, không tìm phép màu",
@@ -10,7 +10,7 @@ const forYou = [
 
 const notForYou = [
   "Muốn học tiếng Anh học thuật, IELTS, TOEIC",
-  "Chưa có kinh nghiệm code, muốn học lập trình",
+  "Chưa có kinh nghiệm làm việc, muốn học chuyên môn",
   "Tìm kiếm khóa học miễn phí hoặc tự học qua video",
   "Không có thời gian practice và áp dụng",
 ];

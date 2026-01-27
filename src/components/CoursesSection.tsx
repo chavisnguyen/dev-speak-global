@@ -80,10 +80,10 @@ const CoursesSection = () => {
             Lộ trình 3 cấp độ
           </span>
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Từ <span className="text-gradient">Foundation</span> đến <span className="text-gradient">Mastery</span>
+            Lộ trình <span className="text-gradient">3 bước</span> từ Foundation đến Mastery
           </h2>
           <p className="text-lg text-muted-foreground">
-            Không học tiếng Anh học thuật. Chỉ học tiếng Anh để làm việc, phỏng vấn, tư vấn và kiếm tiền.
+            3 khóa học nối tiếp nhau. Bạn chọn điểm bắt đầu phù hợp với trình độ hiện tại, sau đó tiếp tục lên level.
           </p>
         </div>
 
@@ -158,7 +158,7 @@ const CoursesSection = () => {
                   <p className="text-sm text-muted-foreground mb-4">{course.duration}</p>
 
                   <Button variant={course.buttonVariant} className="w-full group/btn">
-                    Tôi phù hợp khóa này
+                    Tôi sẽ bắt đầu từ khóa này
                     <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                   </Button>
                 </div>
@@ -167,13 +167,13 @@ const CoursesSection = () => {
           ))}
         </div>
 
-        {/* Combo suggestion */}
+        {/* Sequential learning note */}
         <div className="max-w-3xl mx-auto mt-12 p-6 rounded-2xl border-gradient bg-card text-center">
           <p className="text-lg font-medium mb-2">
-            💡 <span className="text-primary">Gợi ý:</span> Học cả 3 khóa để có lộ trình hoàn chỉnh
+            🚀 <span className="text-primary">Lộ trình nối tiếp:</span> Foundation → Career → Mastery
           </p>
           <p className="text-muted-foreground">
-            Từ nền tảng vững → Phỏng vấn tự tin → Tư vấn chuyên nghiệp. Tổng 24 buổi = Đầu tư cho sự nghiệp dài hạn.
+            Mỗi khóa xây dựng trên nền tảng khóa trước. Bạn có thể bắt đầu từ bất kỳ level nào phù hợp với trình độ hiện tại.
           </p>
         </div>
       </div>

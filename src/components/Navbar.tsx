@@ -1,11 +1,17 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Code2, Menu, X } from "lucide-react";
+import { Code2, Menu, X, MessageCircle, Mail } from "lucide-react";
 
 const navLinks = [
   { name: "Khóa học", href: "#courses" },
-  { name: "Học viên", href: "#testimonials" },
+  { name: "Học viên", href: "#students" },
   { name: "Bảng giá", href: "#pricing" },
+];
+
+const contactLinks = [
+  { name: "Zalo", href: "https://zalo.me/0123456789", icon: MessageCircle },
+  { name: "Threads", href: "https://threads.net/@englishforglobaldevs", icon: MessageCircle },
+  { name: "Email", href: "mailto:hello@englishforglobaldevs.com", icon: Mail },
 ];
 
 const Navbar = () => {
@@ -35,8 +41,22 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* CTA */}
-          <div className="hidden md:block">
+          {/* Contact & CTA */}
+          <div className="hidden md:flex items-center gap-4">
+            <div className="flex items-center gap-2">
+              {contactLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 text-muted-foreground hover:text-primary transition-colors"
+                  title={link.name}
+                >
+                  <link.icon className="w-4 h-4" />
+                </a>
+              ))}
+            </div>
             <Button variant="hero" size="sm">
               Đăng ký tư vấn
             </Button>
@@ -65,6 +85,20 @@ const Navbar = () => {
                   {link.name}
                 </a>
               ))}
+              <div className="flex items-center gap-4 pt-2 border-t border-border">
+                {contactLinks.map((link) => (
+                  <a
+                    key={link.name}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    <link.icon className="w-4 h-4" />
+                    {link.name}
+                  </a>
+                ))}
+              </div>
               <Button variant="hero" className="w-full mt-2">
                 Đăng ký tư vấn
               </Button>

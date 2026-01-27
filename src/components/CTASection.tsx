@@ -1,5 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, MessageCircle, Calendar } from "lucide-react";
+import { ArrowRight, MessageCircle, Calendar, Gift, Mail } from "lucide-react";
+
+const contactMethods = [
+  { name: "Zalo", href: "https://zalo.me/0123456789", icon: MessageCircle },
+  { name: "Threads", href: "https://threads.net/@englishforglobaldevs", icon: MessageCircle },
+  { name: "Email", href: "mailto:hello@englishforglobaldevs.com", icon: Mail },
+];
 
 const CTASection = () => {
   return (
@@ -10,6 +16,15 @@ const CTASection = () => {
 
       <div className="container px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
+          {/* Free trial highlight */}
+          <div className="inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-accent/20 border-2 border-accent mb-8 animate-pulse-glow">
+            <Gift className="w-6 h-6 text-accent" />
+            <div className="text-left">
+              <p className="text-lg font-bold text-accent">1 buổi test trình độ + học thử MIỄN PHÍ</p>
+              <p className="text-sm text-accent/80">Đánh giá trình độ và trải nghiệm phương pháp học</p>
+            </div>
+          </div>
+
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6">
             Sẵn sàng <span className="text-gradient">lên level</span>?
           </h2>
@@ -18,16 +33,31 @@ const CTASection = () => {
             Đăng ký tư vấn miễn phí để tìm khóa học phù hợp.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Button variant="hero" size="xl" className="group">
               <Calendar className="w-5 h-5" />
-              Đăng ký tư vấn miễn phí
+              Đăng ký học thử miễn phí
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button variant="heroOutline" size="xl">
-              <MessageCircle className="w-5 h-5" />
-              Chat với team
-            </Button>
+          </div>
+
+          {/* Contact methods */}
+          <div className="mb-12">
+            <p className="text-sm text-muted-foreground mb-4">Liên hệ trực tiếp:</p>
+            <div className="flex flex-wrap justify-center gap-4">
+              {contactMethods.map((method) => (
+                <a
+                  key={method.name}
+                  href={method.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-4 py-2 rounded-lg bg-secondary/50 border border-border hover:border-primary/50 hover:text-primary transition-all"
+                >
+                  <method.icon className="w-4 h-4" />
+                  <span className="text-sm font-medium">{method.name}</span>
+                </a>
+              ))}
+            </div>
           </div>
 
           {/* Trust signals */}
