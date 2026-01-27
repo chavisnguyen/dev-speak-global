@@ -1,16 +1,18 @@
-import { Code2, Mail, MessageCircle } from "lucide-react";
+import { Code2, Mail } from "lucide-react";
+import zaloIcon from "@/assets/zalo.png";
+import threadIcon from "@/assets/thread.png";
 
 const contactLinks = [
   { 
     name: "Zalo", 
     href: "https://zalo.me/0123456789", 
-    icon: MessageCircle,
+    iconImg: zaloIcon,
     description: "Chat trực tiếp"
   },
   { 
     name: "Threads", 
     href: "https://threads.net/@englishforglobaldevs", 
-    icon: MessageCircle,
+    iconImg: threadIcon,
     description: "@englishforglobaldevs"
   },
   { 
@@ -50,7 +52,11 @@ const Footer = () => {
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 justify-center md:justify-start text-muted-foreground hover:text-primary transition-colors"
                   >
-                    <link.icon className="w-5 h-5" />
+                    {"iconImg" in link ? (
+                      <img src={link.iconImg} alt={link.name} className="w-5 h-5 object-contain flex-shrink-0" />
+                    ) : (
+                      <link.icon className="w-5 h-5" />
+                    )}
                     <div className="text-left">
                       <span className="text-sm font-medium">{link.name}</span>
                       <span className="text-xs text-muted-foreground ml-2">{link.description}</span>

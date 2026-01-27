@@ -1,15 +1,26 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, MessageCircle, Calendar, Gift, Mail } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { ArrowRight, Calendar, Gift, Mail } from "lucide-react";
+import zaloIcon from "@/assets/zalo.png";
+import threadIcon from "@/assets/thread.png";
 
 const contactMethods = [
-  { name: "Zalo", href: "https://zalo.me/0123456789", icon: MessageCircle },
-  { name: "Threads", href: "https://threads.net/@englishforglobaldevs", icon: MessageCircle },
+  { name: "Zalo", href: "https://zalo.me/0123456789", iconImg: zaloIcon },
+  { name: "Threads", href: "https://threads.net/@englishforglobaldevs", iconImg: threadIcon },
   { name: "Email", href: "mailto:hello@englishforglobaldevs.com", icon: Mail },
 ];
 
 const CTASection = () => {
+  const [consultOpen, setConsultOpen] = useState(false);
+
   return (
-    <section className="py-24 bg-background relative overflow-hidden">
+    <section id="consult" className="py-24 bg-background relative overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 bg-glow pointer-events-none" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl" />
@@ -34,12 +45,45 @@ const CTASection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <Button variant="hero" size="xl" className="group">
+            <Button
+              variant="hero"
+              size="xl"
+              className="group"
+              onClick={() => setConsultOpen(true)}
+            >
               <Calendar className="w-5 h-5" />
               Đăng ký học thử miễn phí
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
+
+          {/* Modal: Liên hệ trực tiếp */}
+          <Dialog open={consultOpen} onOpenChange={setConsultOpen}>
+            <DialogContent className="sm:max-w-md">
+              <DialogHeader>
+                <DialogTitle className="text-center">Liên hệ trực tiếp</DialogTitle>
+              </DialogHeader>
+              <div className="flex flex-col gap-3 pt-2">
+                {contactMethods.map((method) => (
+                  <a
+                    key={method.name}
+                    href={method.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-3 px-4 py-3 rounded-xl bg-secondary/50 border border-border hover:border-primary/50 hover:text-primary transition-all font-medium"
+                    onClick={() => setConsultOpen(false)}
+                  >
+                    {"iconImg" in method ? (
+                      <img src={method.iconImg} alt={method.name} className="w-6 h-6 object-contain" />
+                    ) : (
+                      <method.icon className="w-5 h-5" />
+                    )}
+                    {method.name}
+                  </a>
+                ))}
+              </div>
+            </DialogContent>
+          </Dialog>
 
           {/* Contact methods */}
           <div className="mb-12">
@@ -53,7 +97,11 @@ const CTASection = () => {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-4 py-2 rounded-lg bg-secondary/50 border border-border hover:border-primary/50 hover:text-primary transition-all"
                 >
-                  <method.icon className="w-4 h-4" />
+                  {"iconImg" in method ? (
+                    <img src={method.iconImg} alt={method.name} className="w-5 h-5 object-contain" />
+                  ) : (
+                    <method.icon className="w-4 h-4" />
+                  )}
                   <span className="text-sm font-medium">{method.name}</span>
                 </a>
               ))}
@@ -65,10 +113,6 @@ const CTASection = () => {
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-primary" />
               <span>Tư vấn 1:1 miễn phí</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-primary" />
-              <span>Không ép đăng ký</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-primary" />

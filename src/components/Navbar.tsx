@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Code2, Menu, X, MessageCircle, Mail } from "lucide-react";
+import { Code2, Menu, X, Mail } from "lucide-react";
+import zaloIcon from "@/assets/zalo.png";
+import threadIcon from "@/assets/thread.png";
 
 const navLinks = [
   { name: "Khóa học", href: "#courses" },
@@ -9,8 +11,8 @@ const navLinks = [
 ];
 
 const contactLinks = [
-  { name: "Zalo", href: "https://zalo.me/0123456789", icon: MessageCircle },
-  { name: "Threads", href: "https://threads.net/@englishforglobaldevs", icon: MessageCircle },
+  { name: "Zalo", href: "https://zalo.me/0123456789", iconImg: zaloIcon },
+  { name: "Threads", href: "https://threads.net/@englishforglobaldevs", iconImg: threadIcon },
   { name: "Email", href: "mailto:hello@englishforglobaldevs.com", icon: Mail },
 ];
 
@@ -53,12 +55,16 @@ const Navbar = () => {
                   className="p-2 text-muted-foreground hover:text-primary transition-colors"
                   title={link.name}
                 >
-                  <link.icon className="w-4 h-4" />
+                  {"iconImg" in link ? (
+                    <img src={link.iconImg} alt={link.name} className="w-4 h-4 object-contain" />
+                  ) : (
+                    <link.icon className="w-4 h-4" />
+                  )}
                 </a>
               ))}
             </div>
-            <Button variant="hero" size="sm">
-              Đăng ký tư vấn
+            <Button variant="hero" size="sm" asChild>
+              <a href="#consult">Đăng ký tư vấn</a>
             </Button>
           </div>
 
@@ -94,13 +100,19 @@ const Navbar = () => {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
                   >
-                    <link.icon className="w-4 h-4" />
+                    {"iconImg" in link ? (
+                      <img src={link.iconImg} alt={link.name} className="w-4 h-4 object-contain" />
+                    ) : (
+                      <link.icon className="w-4 h-4" />
+                    )}
                     {link.name}
                   </a>
                 ))}
               </div>
-              <Button variant="hero" className="w-full mt-2">
-                Đăng ký tư vấn
+              <Button variant="hero" className="w-full mt-2" asChild>
+                <a href="#consult" onClick={() => setIsOpen(false)}>
+                  Đăng ký tư vấn
+                </a>
               </Button>
             </div>
           </div>

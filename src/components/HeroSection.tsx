@@ -31,7 +31,7 @@ const HeroSection = () => {
           </div>
 
           {/* Main headline - bám ngữ cảnh: stand-up, phỏng vấn, client */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-snug md:leading-normal mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-relaxed md:leading-[1.6] mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
             <span className="text-foreground">Stand-up, phỏng vấn, client — </span>
             <span className="text-gradient">đều cần tiếng Anh.</span>
           </h1>
@@ -64,13 +64,17 @@ const HeroSection = () => {
 
           {/* CTA buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: "0.5s" }}>
-            <Button variant="hero" size="xl">
-              <Globe className="w-5 h-5" />
-              Đăng ký tư vấn miễn phí
+            <Button variant="hero" size="xl" asChild>
+              <a href="#consult">
+                <Globe className="w-5 h-5" />
+                Đăng ký tư vấn miễn phí
+              </a>
             </Button>
-            <Button variant="heroOutline" size="xl">
-              <TrendingUp className="w-5 h-5" />
-              Xem lộ trình phù hợp
+            <Button variant="heroOutline" size="xl" asChild>
+              <a href="#courses">
+                <TrendingUp className="w-5 h-5" />
+                Xem lộ trình phù hợp
+              </a>
             </Button>
           </div>
 
