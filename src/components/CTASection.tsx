@@ -6,15 +6,8 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { ArrowRight, Calendar, Gift, Mail } from "lucide-react";
-import zaloIcon from "@/assets/zalo.png";
-import threadIcon from "@/assets/thread.png";
-
-const contactMethods = [
-  { name: "Zalo", href: "https://zalo.me/0123456789", iconImg: zaloIcon },
-  { name: "Threads", href: "https://threads.net/@englishforglobaldevs", iconImg: threadIcon },
-  { name: "Email", href: "mailto:hello@englishforglobaldevs.com", icon: Mail },
-];
+import { ArrowRight, Calendar, Gift } from "lucide-react";
+import { contactLinks } from "@/data/const";
 
 const CTASection = () => {
   const [consultOpen, setConsultOpen] = useState(false);
@@ -64,21 +57,21 @@ const CTASection = () => {
                 <DialogTitle className="text-center">Liên hệ trực tiếp</DialogTitle>
               </DialogHeader>
               <div className="flex flex-col gap-3 pt-2">
-                {contactMethods.map((method) => (
+                {contactLinks.map((link) => (
                   <a
-                    key={method.name}
-                    href={method.href}
+                    key={link.name}
+                    href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-3 px-4 py-3 rounded-xl bg-secondary/50 border border-border hover:border-primary/50 hover:text-primary transition-all font-medium"
                     onClick={() => setConsultOpen(false)}
                   >
-                    {"iconImg" in method ? (
-                      <img src={method.iconImg} alt={method.name} className="w-6 h-6 object-contain" />
+                    {"iconImg" in link ? (
+                      <img src={link.iconImg} alt={link.name} className="w-6 h-6 object-contain" />
                     ) : (
-                      <method.icon className="w-5 h-5" />
+                      <link.icon className="w-5 h-5" />
                     )}
-                    {method.name}
+                    {link.name}
                   </a>
                 ))}
               </div>
@@ -89,20 +82,20 @@ const CTASection = () => {
           <div className="mb-12">
             <p className="text-sm text-muted-foreground mb-4">Liên hệ trực tiếp:</p>
             <div className="flex flex-wrap justify-center gap-4">
-              {contactMethods.map((method) => (
+              {contactLinks.map((link) => (
                 <a
-                  key={method.name}
-                  href={method.href}
+                  key={link.name}
+                  href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-4 py-2 rounded-lg bg-secondary/50 border border-border hover:border-primary/50 hover:text-primary transition-all"
                 >
-                  {"iconImg" in method ? (
-                    <img src={method.iconImg} alt={method.name} className="w-5 h-5 object-contain" />
+                  {"iconImg" in link ? (
+                    <img src={link.iconImg} alt={link.name} className="w-5 h-5 object-contain" />
                   ) : (
-                    <method.icon className="w-4 h-4" />
+                    <link.icon className="w-4 h-4" />
                   )}
-                  <span className="text-sm font-medium">{method.name}</span>
+                  <span className="text-sm font-medium">{link.name}</span>
                 </a>
               ))}
             </div>
