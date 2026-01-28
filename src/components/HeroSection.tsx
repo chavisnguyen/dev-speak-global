@@ -31,7 +31,10 @@ const HeroSection = () => {
           </div>
 
           {/* Main headline - bám ngữ cảnh: stand-up, phỏng vấn, client */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-relaxed md:leading-[1.6] mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+          <h1
+            className="text-4xl md:text-6xl lg:text-7xl font-black leading-snug mb-6 animate-fade-up"
+            style={{ animationDelay: "0.1s", lineHeight: '1.3' }}
+          >
             <span className="text-foreground">Stand-up, phỏng vấn, client — </span>
             <span className="text-gradient">đều cần tiếng Anh.</span>
           </h1>
