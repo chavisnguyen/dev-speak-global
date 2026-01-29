@@ -147,14 +147,8 @@ const CoursesSection = () => {
                   ))}
                 </div>
 
-                {/* Pricing */}
+                {/* Pricing - ẩn giá, chỉ hiển thị thông tin liên hệ */}
                 <div className="pt-4 border-t border-border">
-                  <div className="flex items-baseline gap-1 mb-1">
-                    <span className="text-3xl font-bold" style={{ color: `hsl(var(--${course.colorClass}))` }}>
-                      {course.price}
-                    </span>
-                    <span className="text-muted-foreground">{course.priceUnit}</span>
-                  </div>
                   <p className="text-sm text-muted-foreground mb-4">{course.duration}</p>
 
                   <Button variant={course.buttonVariant} className="w-full group/btn" asChild>

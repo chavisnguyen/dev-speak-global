@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -9,8 +8,12 @@ import {
 import { ArrowRight, Calendar, Gift } from "lucide-react";
 import { contactLinks } from "@/data/const";
 
-const CTASection = () => {
-  const [consultOpen, setConsultOpen] = useState(false);
+type CTASectionProps = {
+  consultOpen: boolean;
+  onConsultOpenChange: (open: boolean) => void;
+};
+
+const CTASection = ({ consultOpen, onConsultOpenChange }: CTASectionProps) => {
 
   return (
     <section id="consult" className="py-24 bg-background relative overflow-hidden">
@@ -42,7 +45,7 @@ const CTASection = () => {
               variant="hero"
               size="xl"
               className="group"
-              onClick={() => setConsultOpen(true)}
+              onClick={() => onConsultOpenChange(true)}
             >
               <Calendar className="w-5 h-5" />
               Đăng ký học thử miễn phí
@@ -51,7 +54,7 @@ const CTASection = () => {
           </div>
 
           {/* Modal: Liên hệ trực tiếp */}
-          <Dialog open={consultOpen} onOpenChange={setConsultOpen}>
+          <Dialog open={consultOpen} onOpenChange={onConsultOpenChange}>
             <DialogContent className="sm:max-w-md">
               <DialogHeader>
                 <DialogTitle className="text-center">Liên hệ trực tiếp</DialogTitle>
@@ -64,7 +67,7 @@ const CTASection = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-3 px-4 py-3 rounded-xl bg-secondary/50 border border-border hover:border-primary/50 hover:text-primary transition-all font-medium"
-                    onClick={() => setConsultOpen(false)}
+                    onClick={() => onConsultOpenChange(false)}
                   >
                     {"iconImg" in link ? (
                       <img src={link.iconImg} alt={link.name} className="w-6 h-6 object-contain" />

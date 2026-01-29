@@ -10,7 +10,11 @@ const navLinks = [
   { name: "Bảng giá", href: "#pricing" },
 ];
 
-const Navbar = () => {
+type NavbarProps = {
+  onOpenConsult?: () => void;
+};
+
+const Navbar = ({ onOpenConsult }: NavbarProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -57,8 +61,14 @@ const Navbar = () => {
                 </a>
               ))}
             </div>
-            <Button variant="hero" size="sm" asChild>
-              <a href="#consult">Đăng ký tư vấn</a>
+            <Button
+              variant="hero"
+              size="sm"
+              onClick={() => {
+                onOpenConsult?.();
+              }}
+            >
+              Đăng ký tư vấn
             </Button>
           </div>
 
@@ -103,10 +113,15 @@ const Navbar = () => {
                   </a>
                 ))}
               </div>
-              <Button variant="hero" className="w-full mt-2" asChild>
-                <a href="#consult" onClick={() => setIsOpen(false)}>
-                  Đăng ký tư vấn
-                </a>
+              <Button
+                variant="hero"
+                className="w-full mt-2"
+                onClick={() => {
+                  setIsOpen(false);
+                  onOpenConsult?.();
+                }}
+              >
+                Đăng ký tư vấn
               </Button>
             </div>
           </div>

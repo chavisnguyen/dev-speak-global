@@ -93,14 +93,8 @@ const PricingSection = () => {
               </div>
 
               <div className="text-center mb-6">
-                <div className="flex items-baseline justify-center gap-1">
-                  <span className="text-4xl font-bold" style={{ color: `hsl(var(--${course.color}))` }}>
-                    {course.price}
-                  </span>
-                  <span className="text-muted-foreground">/ buổi</span>
-                </div>
-                <p className="text-sm text-muted-foreground mt-1">
-                  Tổng: {course.total} ({course.sessions} buổi)
+                <p className="text-muted-foreground">
+                  Liên hệ để biết giá ({course.sessions} buổi)
                 </p>
               </div>
 
@@ -128,8 +122,7 @@ const PricingSection = () => {
               </p>
             </div>
             <div className="text-center md:text-right flex-shrink-0">
-              <div className="text-sm text-muted-foreground line-through">3.360.000đ</div>
-              <div className="text-3xl font-bold text-accent">3.024.000đ</div>
+              <p className="text-muted-foreground">Liên hệ để biết giá combo</p>
               <Button variant="hero" className="mt-4" asChild>
                 <a href="#consult">Đăng ký combo</a>
               </Button>

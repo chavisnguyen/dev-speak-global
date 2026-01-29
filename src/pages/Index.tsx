@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import ProblemSection from "@/components/ProblemSection";
@@ -11,9 +12,11 @@ import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
+  const [consultOpen, setConsultOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
+      <Navbar onOpenConsult={() => setConsultOpen(true)} />
       <main>
         <HeroSection />
         <ProblemSection />
@@ -23,7 +26,7 @@ const Index = () => {
         <TestimonialsSection />
         <WhoIsThisForSection />
         <PricingSection />
-        <CTASection />
+        <CTASection consultOpen={consultOpen} onConsultOpenChange={setConsultOpen} />
       </main>
       <Footer />
     </div>
