@@ -18,7 +18,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navbar onOpenConsult={() => setConsultOpen(true)} />
       <main>
-        <HeroSection />
+        <HeroSection onOpenConsult={() => setConsultOpen(true)} />
         <ProblemSection />
         <CoursesSection />
         <OutcomesSection />

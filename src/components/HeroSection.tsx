@@ -1,7 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Code2, Globe, TrendingUp } from "lucide-react";
 
-const HeroSection = () => {
+type HeroSectionProps = {
+  onOpenConsult?: () => void;
+};
+
+const HeroSection = ({ onOpenConsult }: HeroSectionProps) => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-hero-gradient">
       {/* Background glow effects */}
@@ -67,11 +71,13 @@ const HeroSection = () => {
 
           {/* CTA buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: "0.5s" }}>
-            <Button variant="hero" size="xl" asChild>
-              <a href="#consult">
-                <Globe className="w-5 h-5" />
-                Đăng ký tư vấn miễn phí
-              </a>
+            <Button
+              variant="hero"
+              size="xl"
+              onClick={() => onOpenConsult?.()}
+            >
+              <Globe className="w-5 h-5" />
+              Đăng ký tư vấn miễn phí
             </Button>
             <Button variant="heroOutline" size="xl" asChild>
               <a href="#courses">

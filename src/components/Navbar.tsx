@@ -74,8 +74,11 @@ const Navbar = ({ onOpenConsult }: NavbarProps) => {
 
           {/* Mobile menu button */}
           <button
+            type="button"
             className="md:hidden p-2 text-foreground"
             onClick={() => setIsOpen(!isOpen)}
+            aria-label={isOpen ? "Đóng menu" : "Mở menu"}
+            aria-expanded={isOpen}
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
