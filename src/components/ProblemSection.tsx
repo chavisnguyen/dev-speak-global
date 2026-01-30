@@ -32,7 +32,7 @@ const ProblemSection = () => {
       <div className="container px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <span className="inline-block px-4 py-1 rounded-full bg-destructive/10 text-destructive text-sm font-medium mb-4">
-            Nỗi đau thật của Dev/BA/Designer
+            Painpoint chung của IT guys
           </span>
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Tiếng Anh yếu = <span className="text-destructive">Mất quyền chủ động</span>

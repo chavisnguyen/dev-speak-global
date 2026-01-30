@@ -20,7 +20,7 @@ const stories = [
         "Tự tham gia daily call với client",
         "Pushback được 2 scope changes thành công",
         "Được client request làm trực tiếp",
-        "Tăng rate 35%",
+        "100% feedback tích cực từ client",
       ],
     },
     icon: TrendingUp,
@@ -87,7 +87,7 @@ const SuccessStoriesSection = () => {
             Họ đã <span className="text-gradient">thay đổi</span> như thế nào?
           </h2>
           <p className="text-lg text-muted-foreground">
-            Không phải phép màu. Họ học đúng và thực hành nhiều.
+            Sau khi hoàn thành lý thuyết kết hợp thực thành & nhận feedback lại từ mentor
           </p>
         </div>
 

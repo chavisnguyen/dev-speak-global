@@ -40,7 +40,7 @@ const OutcomesSection = () => {
             Sau khóa học, bạn sẽ <span className="text-gradient">làm được gì?</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Không lý thuyết suông. Đây là những kỹ năng bạn áp dụng ngay vào công việc.
+            Đây không phải là lý thuyết suông. Đây là những kỹ năng bạn áp dụng ngay vào công việc.
           </p>
         </div>
 

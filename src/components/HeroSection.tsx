@@ -26,7 +26,7 @@ const HeroSection = ({ onOpenConsult }: HeroSectionProps) => {
           <div className="inline-flex flex-col items-center gap-3 mb-8 animate-fade-up">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-secondary/50 backdrop-blur-sm">
               <Code2 className="w-4 h-4 text-primary" />
-              <span className="text-sm text-muted-foreground">Khóa học tiếng Anh chuyên biệt cho Dev / BA / Designer</span>
+              <span className="text-sm text-muted-foreground">Khóa học tiếng Anh chuyên biệt cho IT guys</span>
             </div>
             <div className="inline-flex items-center gap-3 px-6 py-3 rounded-2xl bg-accent/20 border-2 border-accent text-accent font-bold animate-pulse-glow">
               <span className="text-lg">🎁</span>
@@ -89,16 +89,12 @@ const HeroSection = ({ onOpenConsult }: HeroSectionProps) => {
           {/* Trust indicators */}
           <div className="flex flex-wrap justify-center gap-8 mt-16 pt-8 border-t border-border/50 animate-fade-up" style={{ animationDelay: "0.6s" }}>
             <div className="text-center">
-              <div className="text-3xl font-bold text-foreground">100+</div>
-              <div className="text-sm text-muted-foreground">Dev/BA/Designer đã học</div>
-            </div>
-            <div className="text-center">
               <div className="text-3xl font-bold text-foreground">100%</div>
               <div className="text-sm text-muted-foreground">Đạt mục tiêu học tập</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-foreground">35%</div>
-              <div className="text-sm text-muted-foreground">Tăng rate trung bình</div>
+              <div className="text-3xl font-bold text-foreground">100%</div>
+              <div className="text-sm text-muted-foreground">Feedback tích cực</div>
             </div>
           </div>
         </div>

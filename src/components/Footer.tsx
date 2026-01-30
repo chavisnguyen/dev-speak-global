@@ -14,7 +14,7 @@ const Footer = () => {
                 <span className="text-xl font-bold">English for Global Devs</span>
               </div>
               <p className="text-sm text-muted-foreground">
-                Tiếng Anh thực chiến cho Dev/BA/Designer hướng tới thị trường global.
+                Tiếng Anh thực chiến cho IT guys hướng tới thị trường global.
               </p>
             </div>
 
@@ -57,7 +57,7 @@ const Footer = () => {
 
           <div className="mt-8 pt-8 border-t border-border text-center">
             <p className="text-sm text-muted-foreground">
-              © 2025 English for Global Devs. Made with 💙 for Vietnamese Dev/BA/Designer.
+              © 2025 English for Global Devs. Made with 💙 for Vietnamese IT guys.
             </p>
           </div>
         </div>
