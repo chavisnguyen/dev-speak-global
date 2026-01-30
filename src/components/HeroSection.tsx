@@ -28,6 +28,10 @@ const HeroSection = ({ onOpenConsult }: HeroSectionProps) => {
               <Code2 className="w-4 h-4 text-primary" />
               <span className="text-sm text-muted-foreground">Khóa học tiếng Anh chuyên biệt cho IT guys</span>
             </div>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/40 bg-primary/10 backdrop-blur-sm">
+              <span className="w-2 h-2 rounded-full bg-primary shrink-0 animate-pulse" aria-hidden />
+              <span className="text-sm font-medium text-primary">Online 100%, tương tác trực tiếp</span>
+            </div>
             <div className="inline-flex items-center gap-3 px-6 py-3 rounded-2xl bg-accent/20 border-2 border-accent text-accent font-bold animate-pulse-glow">
               <span className="text-lg">🎁</span>
               <span>1 buổi test trình độ + học thử MIỄN PHÍ</span>

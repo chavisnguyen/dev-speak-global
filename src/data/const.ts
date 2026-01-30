@@ -3,12 +3,12 @@ import threadIcon from "@/assets/thread.png";
 import { Mail } from "lucide-react";
 
 export const contactLinks = [
-    // {
-    //     name: "Zalo",
-    //     href: "https://zalo.me/84911462090",
-    //     iconImg: zaloIcon,
-    //     description: "Chat trực tiếp"
-    // },
+    {
+        name: "Zalo",
+        href: "https://zalo.me/84911462090",
+        iconImg: zaloIcon,
+        description: "Chat trực tiếp"
+    },
     {
         name: "Threads",
         href: "https://www.threads.com/@dev.englishpro",
