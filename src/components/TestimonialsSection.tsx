@@ -46,7 +46,7 @@ const TestimonialsSection = () => {
             Học viên nói gì
           </span>
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Feedback <span className="text-gradient">thật</span> từ dev thật
+            Feedback <span className="text-gradient">thật</span> từ IT guys
           </h2>
         </div>
 

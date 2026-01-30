@@ -7,7 +7,6 @@ import OutcomesSection from "@/components/OutcomesSection";
 import SuccessStoriesSection from "@/components/SuccessStoriesSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import WhoIsThisForSection from "@/components/WhoIsThisForSection";
-import PricingSection from "@/components/PricingSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 
@@ -25,7 +24,6 @@ const Index = () => {
         <SuccessStoriesSection />
         <TestimonialsSection />
         <WhoIsThisForSection />
-        <PricingSection />
         <CTASection consultOpen={consultOpen} onConsultOpenChange={setConsultOpen} />
       </main>
       <Footer />

@@ -1,9 +1,8 @@
 import { Check, X } from "lucide-react";
 
 const forYou = [
-  "Dev/BA/Designer muốn làm việc với team hoặc client quốc tế",
-  "Đã có nền tảng chuyên môn, chỉ cần bổ sung English đúng ngữ cảnh",
-  "Muốn tăng rate, tăng cơ hội, giảm stress trong công việc",
+  "Bạn muốn làm việc với công ty IT hoặc khách hàng quốc tế",
+  "Muốn tăng vị thế và thu nhập",
   "Sẵn sàng đầu tư thời gian để học và thực hành",
   "Nghiêm túc về sự nghiệp, không tìm phép màu",
 ];
@@ -12,7 +11,7 @@ const notForYou = [
   "Muốn học tiếng Anh học thuật, IELTS, TOEIC",
   "Chưa có kinh nghiệm làm việc, muốn học chuyên môn",
   "Tìm kiếm khóa học miễn phí hoặc tự học qua video",
-  "Không có thời gian practice và áp dụng",
+  "Không có thời gian luyện tập",
 ];
 
 const WhoIsThisForSection = () => {
@@ -24,7 +23,7 @@ const WhoIsThisForSection = () => {
             Dành cho ai?
           </span>
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Khóa học này <span className="text-gradient">phù hợp với bạn?</span>
+            Khóa học này <span className="text-gradient">có phù hợp với bạn?</span>
           </h2>
           <p className="text-lg text-muted-foreground">
             Thẳng thắn để bạn quyết định đúng.

@@ -34,21 +34,20 @@ const HeroSection = ({ onOpenConsult }: HeroSectionProps) => {
             </div>
           </div>
 
-          {/* Main headline - bám ngữ cảnh: stand-up, phỏng vấn, client */}
+          {/* Main headline - Tiếng Anh thực chiến trong môi trường IT Global */}
           <h1
             className="text-4xl md:text-6xl lg:text-7xl font-black leading-snug mb-6 animate-fade-up"
             style={{ animationDelay: "0.1s", lineHeight: '1.3' }}
           >
-            <span className="text-foreground">Stand-up, phỏng vấn, client — </span>
-            <span className="text-gradient">đều cần tiếng Anh.</span>
+            <span className="text-gradient">Tiếng Anh thực chiến trong môi trường IT Global</span>
           </h1>
 
           {/* Sub-headline */}
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-4 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-            Sợ meeting. Sợ phỏng vấn. Sợ client.
+            Xóa tan nỗi niềm &quot;ngại nói&quot;, &quot;sợ sai&quot;, &quot;không tự tin&quot;
           </p>
           <p className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto mb-10 animate-fade-up" style={{ animationDelay: "0.3s" }}>
-            Đã đến lúc <strong className="text-primary">làm chủ tiếng Anh</strong> để được tin tưởng, được tôn trọng, và <strong className="text-accent">tăng thu nhập</strong>.
+            Đã đến lúc <strong className="text-primary">làm chủ tiếng Anh</strong> để &quot;bơi ra biển lớn&quot;, được tin tưởng, được tôn trọng, và <strong className="text-accent">tăng thu nhập</strong>.
           </p>
 
           {/* Pathway indicators */}
@@ -77,12 +76,12 @@ const HeroSection = ({ onOpenConsult }: HeroSectionProps) => {
               onClick={() => onOpenConsult?.()}
             >
               <Globe className="w-5 h-5" />
-              Đăng ký tư vấn miễn phí
+              Đăng ký học thử miễn phí
             </Button>
             <Button variant="heroOutline" size="xl" asChild>
               <a href="#courses">
                 <TrendingUp className="w-5 h-5" />
-                Xem lộ trình phù hợp
+                Danh sách khóa học
               </a>
             </Button>
           </div>
@@ -94,8 +93,8 @@ const HeroSection = ({ onOpenConsult }: HeroSectionProps) => {
               <div className="text-sm text-muted-foreground">Dev/BA/Designer đã học</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-foreground">95%</div>
-              <div className="text-sm text-muted-foreground">Tự tin hơn sau khóa</div>
+              <div className="text-3xl font-bold text-foreground">100%</div>
+              <div className="text-sm text-muted-foreground">Đạt mục tiêu học tập</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-foreground">35%</div>

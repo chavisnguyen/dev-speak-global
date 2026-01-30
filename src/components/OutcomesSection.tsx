@@ -14,7 +14,7 @@ const outcomes = [
   {
     icon: Presentation,
     title: "Dẫn dắt demo & discussion với client",
-    description: "Present solution, handle questions, pushback khi cần, đàm phán terms.",
+    description: "Present solution, handle questions, pushback khi cần, xử lý tình huống khó.",
   },
   {
     icon: FileText,
@@ -34,7 +34,7 @@ const OutcomesSection = () => {
       <div className="container px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <span className="inline-block px-4 py-1 rounded-full bg-accent/10 text-accent text-sm font-medium mb-4">
-            Kết quả thực tế
+            Từ học tập đến thực tiễn
           </span>
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Sau khóa học, bạn sẽ <span className="text-gradient">làm được gì?</span>
@@ -75,14 +75,14 @@ const OutcomesSection = () => {
                 <CheckCircle2 className="w-5 h-5 text-primary" />
                 <span className="text-3xl font-bold text-foreground">8 buổi</span>
               </div>
-              <p className="text-muted-foreground text-sm">Mỗi khóa chỉ 8 buổi, thực hành ngay</p>
+              <p className="text-muted-foreground text-sm">Thời gian ngắn, thực hành hiệu quả</p>
             </div>
             <div>
               <div className="flex items-center justify-center gap-2 mb-2">
                 <CheckCircle2 className="w-5 h-5 text-primary" />
                 <span className="text-3xl font-bold text-foreground">100%</span>
               </div>
-              <p className="text-muted-foreground text-sm">Nội dung thực tế từ môi trường IT</p>
+              <p className="text-muted-foreground text-sm">100% đạt mục tiêu học tập</p>
             </div>
             <div>
               <div className="flex items-center justify-center gap-2 mb-2">

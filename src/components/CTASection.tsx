@@ -33,11 +33,10 @@ const CTASection = ({ consultOpen, onConsultOpenChange }: CTASectionProps) => {
           </div>
 
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6">
-            Sẵn sàng <span className="text-gradient">lên level</span>?
+            Sẵn sàng <span className="text-gradient">up level</span>?
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
-            Đừng để tiếng Anh cản trở sự nghiệp của bạn. 
-            Đăng ký tư vấn miễn phí để tìm khóa học phù hợp.
+            Đừng để &quot;ngại tiếng Anh&quot; cản trở sự nghiệp của bạn.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
@@ -48,7 +47,7 @@ const CTASection = ({ consultOpen, onConsultOpenChange }: CTASectionProps) => {
               onClick={() => onConsultOpenChange(true)}
             >
               <Calendar className="w-5 h-5" />
-              Đăng ký học thử miễn phí
+              Nhận tư vấn lộ trình học tập
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>

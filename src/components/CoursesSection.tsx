@@ -12,13 +12,13 @@ const courses = [
     colorClass: "course-foundation",
     price: "120.000đ",
     priceUnit: "/ buổi",
-    duration: "8 buổi × 1 giờ",
-    target: "Lấy lại căn bản tiếng Anh IT để bắt đầu làm việc môi trường global",
+    duration: "8 buổi × 60 phút/buổi",
+    target: "Củng cố nền tảng ngôn ngữ ngành",
     outcomes: [
       "Viết daily report rõ ràng, đúng format",
       "Đọc hiểu tài liệu kỹ thuật tiếng Anh",
       "Viết email công việc cơ bản",
-      "Tham gia stand-up không còn run",
+      "Tự tin lên tiếng trong stand-up",
     ],
     buttonVariant: "courseFoundation" as const,
   },
@@ -32,8 +32,8 @@ const courses = [
     colorClass: "course-career",
     price: "140.000đ",
     priceUnit: "/ buổi",
-    duration: "8 buổi × 1 giờ",
-    target: "Vượt phỏng vấn tiếng Anh và hòa nhập team quốc tế",
+    duration: "8 buổi × 60 phút/buổi",
+    target: "Giành lấy tấm vé tới môi trường global",
     outcomes: [
       "Trả lời phỏng vấn IT tự tin, mạch lạc",
       "Giải thích kỹ thuật bằng tiếng Anh",
@@ -53,13 +53,13 @@ const courses = [
     colorClass: "course-mastery",
     price: "160.000đ",
     priceUnit: "/ buổi",
-    duration: "8 buổi × 1 giờ",
-    target: "Chuyển từ người làm theo yêu cầu sang đối tác kỹ thuật có tiếng nói",
+    duration: "8 buổi × 60 phút/buổi",
+    target: "Nâng tầm vị thế từ \"thợ code\" tới \"chuyên gia\"",
     outcomes: [
       "Tư vấn giải pháp kỹ thuật cho client",
       "Pushback scope/deadline hợp lý",
       "Dẫn dắt demo & technical discussion",
-      "Đàm phán rate và contract terms",
+      "Xử lý tình huống khó",
     ],
     buttonVariant: "courseMastery" as const,
   },
@@ -153,7 +153,7 @@ const CoursesSection = () => {
 
                   <Button variant={course.buttonVariant} className="w-full group/btn" asChild>
                     <a href="#consult">
-                      Tôi sẽ bắt đầu từ khóa này
+                      Tôi muốn đi từ đây
                       <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                     </a>
                   </Button>
@@ -163,15 +163,6 @@ const CoursesSection = () => {
           ))}
         </div>
 
-        {/* Sequential learning note */}
-        <div className="max-w-3xl mx-auto mt-12 p-6 rounded-2xl border-gradient bg-card text-center">
-          <p className="text-lg font-medium mb-2">
-            🚀 <span className="text-primary">Lộ trình nối tiếp:</span> Foundation → Career → Mastery
-          </p>
-          <p className="text-muted-foreground">
-            Mỗi khóa xây dựng trên nền tảng khóa trước. Bạn có thể bắt đầu từ bất kỳ level nào phù hợp với trình độ hiện tại.
-          </p>
-        </div>
       </div>
     </section>
   );

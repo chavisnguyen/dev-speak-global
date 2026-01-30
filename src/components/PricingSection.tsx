@@ -34,7 +34,7 @@ const courses = [
 
 const benefits = [
   "Lớp học nhỏ 6-8 học viên",
-  "Giảng viên có kinh nghiệm làm việc global",
+  "Giảng viên có kinh nghiệm làm việc IT global",
   "Tài liệu thực tế từ môi trường IT",
   "Feedback cá nhân từng buổi",
   "Recording để xem lại",
@@ -92,15 +92,11 @@ const PricingSection = () => {
                 <h3 className="text-xl font-bold">{course.name}</h3>
               </div>
 
-              <div className="text-center mb-6">
-                <p className="text-muted-foreground">
-                  Liên hệ để biết giá ({course.sessions} buổi)
-                </p>
-              </div>
+              <div className="text-center mb-6" />
 
               <Button variant={course.variant} className="w-full" asChild>
                 <a href="#consult">
-                  Đăng ký ngay
+                  Đăng ký nhận tư vấn 1-1
                   <ArrowRight className="w-4 h-4" />
                 </a>
               </Button>

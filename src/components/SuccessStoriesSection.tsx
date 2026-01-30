@@ -81,13 +81,13 @@ const SuccessStoriesSection = () => {
       <div className="container px-4">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <span className="inline-block px-4 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-            Case Study
+            Kết quả học viên
           </span>
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Họ đã <span className="text-gradient">thay đổi</span> như thế nào?
           </h2>
           <p className="text-lg text-muted-foreground">
-            Không phải phép màu. Chỉ là học đúng thứ cần học, rồi áp dụng.
+            Không phải phép màu. Họ học đúng và thực hành nhiều.
           </p>
         </div>
 

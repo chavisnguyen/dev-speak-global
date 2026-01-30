@@ -7,7 +7,6 @@ import { contactLinks } from "@/data/const";
 const navLinks = [
   { name: "Khóa học", href: "#courses" },
   { name: "Học viên", href: "#students" },
-  { name: "Bảng giá", href: "#pricing" },
 ];
 
 type NavbarProps = {
@@ -24,8 +23,8 @@ const Navbar = ({ onOpenConsult }: NavbarProps) => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <Code2 className="w-6 h-6 text-primary" />
-            <span className="font-bold text-lg hidden sm:block">English for Global Devs</span>
-            <span className="font-bold text-lg sm:hidden">E4GD</span>
+            <span className="font-bold text-lg hidden sm:block">dev.englishpro</span>
+            <span className="font-bold text-lg sm:hidden">dev.englishpro</span>
           </Link>
 
           {/* Desktop nav */}
