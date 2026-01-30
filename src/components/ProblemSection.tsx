@@ -13,7 +13,7 @@ const problems = [
   },
   {
     icon: ShieldX,
-    title: "Client nói, mình chỉ gật",
+    title: "Client nói, chỉ biết gật",
     description: "Scope bất hợp lý? Deadline phi thực tế? Biết sai nhưng không dám pushback. Kết quả: overtime, underpaid, burn out.",
   },
   {
@@ -69,7 +69,7 @@ const ProblemSection = () => {
         {/* Transition text */}
         <div className="max-w-3xl mx-auto text-center mt-16 pt-16 border-t border-border">
           <p className="text-xl text-muted-foreground">
-            Nhưng tin tốt là: <span className="text-foreground font-semibold">Tiếng Anh không khó học.</span>
+            Nhưng:<span className="text-foreground font-semibold">Tiếng Anh không khó học.</span>
           </p>
           <p className="text-xl text-primary mt-2 font-medium">
             Chỉ cần học đúng thứ, đúng cách, đúng ngữ cảnh.
