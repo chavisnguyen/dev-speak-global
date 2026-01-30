@@ -19,16 +19,16 @@ const Navbar = ({ onOpenConsult }: NavbarProps) => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border/50">
       <div className="container px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="relative flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2 z-10">
             <Code2 className="w-6 h-6 text-primary" />
             <span className="font-bold text-lg hidden sm:block">dev.englishpro</span>
             <span className="font-bold text-lg sm:hidden">dev.englishpro</span>
           </Link>
 
-          {/* Desktop nav */}
-          <div className="hidden md:flex items-center gap-8">
+          {/* Desktop nav - căn giữa thanh nav */}
+          <div className="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
             {navLinks.map((link) => (
               <a
                 key={link.name}
@@ -41,7 +41,7 @@ const Navbar = ({ onOpenConsult }: NavbarProps) => {
           </div>
 
           {/* Contact & CTA */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden md:flex items-center gap-4 z-10">
             <div className="flex items-center gap-2">
               {contactLinks.map((link) => (
                 <a
