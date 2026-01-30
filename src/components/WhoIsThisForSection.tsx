@@ -1,7 +1,7 @@
 import { Check, X } from "lucide-react";
 
 const forYou = [
-  "Bạn muốn làm việc với công ty IT hoặc khách hàng quốc tế",
+  "Muốn làm việc với công ty IT hoặc khách hàng quốc tế",
   "Muốn tăng vị thế và thu nhập",
   "Sẵn sàng đầu tư thời gian để học và thực hành",
   "Nghiêm túc về sự nghiệp, không tìm phép màu",
@@ -37,7 +37,7 @@ const WhoIsThisForSection = () => {
               <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
                 <Check className="w-5 h-5 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-primary">Phù hợp cho bạn nếu:</h3>
+              <h3 className="text-xl font-bold text-primary">Phù hợp nếu bạn:</h3>
             </div>
             <ul className="space-y-4">
               {forYou.map((item, index) => (
@@ -55,7 +55,7 @@ const WhoIsThisForSection = () => {
               <div className="w-10 h-10 rounded-full bg-destructive/20 flex items-center justify-center">
                 <X className="w-5 h-5 text-destructive" />
               </div>
-              <h3 className="text-xl font-bold text-destructive">Không phù hợp nếu:</h3>
+              <h3 className="text-xl font-bold text-destructive">Không phù hợp nếu bạn:</h3>
             </div>
             <ul className="space-y-4">
               {notForYou.map((item, index) => (

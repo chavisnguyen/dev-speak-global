@@ -76,7 +76,7 @@ const HeroSection = ({ onOpenConsult }: HeroSectionProps) => {
               onClick={() => onOpenConsult?.()}
             >
               <Globe className="w-5 h-5" />
-              Đăng ký học thử miễn phí
+              Đăng ký test trình độ miễn phí
             </Button>
             <Button variant="heroOutline" size="xl" asChild>
               <a href="#courses">

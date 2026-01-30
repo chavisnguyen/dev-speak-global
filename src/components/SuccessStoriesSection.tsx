@@ -19,8 +19,7 @@ const stories = [
       points: [
         "Tự tham gia daily call với client",
         "Pushback được 2 scope changes thành công",
-        "Được client request làm trực tiếp",
-        "100% feedback tích cực từ client",
+        "100% feedback tiến bộ từ client",
       ],
     },
     icon: TrendingUp,
@@ -34,7 +33,7 @@ const stories = [
       title: "Trước khóa học",
       points: [
         "Portfolio tốt nhưng phỏng vấn tiếng Anh fail",
-        "Đã fail 3 vòng interview với công ty Singapore",
+        "Đã fail 3 lần phỏng vấn với các công ty Global",
         "Mất tự tin, không dám apply tiếp",
       ],
     },
@@ -66,7 +65,7 @@ const stories = [
       points: [
         "Rating 5.0 với Top Rated badge",
         "Tự tin proposal và demo solution",
-        "Rate tăng từ $20 lên $45/giờ",
+        "Rate tăng từ $10 lên $20/giờ",
         "Có 2 long-term clients",
       ],
     },

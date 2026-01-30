@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="text-center md:text-left">
               <div className="flex items-center gap-2 justify-center md:justify-start mb-2">
                 <Code2 className="w-6 h-6 text-primary" />
-                <span className="text-xl font-bold">English for Global Devs</span>
+                <span className="text-xl font-bold">English for Global works</span>
               </div>
               <p className="text-sm text-muted-foreground">
                 Tiếng Anh thực chiến cho IT guys hướng tới thị trường global.

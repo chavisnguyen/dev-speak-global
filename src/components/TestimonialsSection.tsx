@@ -26,7 +26,7 @@ const testimonials = [
     rating: 5,
   },
   {
-    quote: "Lớp học nhỏ nên được feedback nhiều. Thầy sửa từng câu, từng cách diễn đạt. Đây là điều mình không tìm được ở các khóa online khác.",
+    quote: "Lớp học nhỏ nên được feedback nhiều. Cô giáo sửa từng câu, từng cách diễn đạt. Đây là điều mình không tìm được ở các khóa online khác.",
     name: "Phương T.",
     role: "Junior Dev",
     rating: 5,

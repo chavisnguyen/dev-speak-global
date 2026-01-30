@@ -41,7 +41,7 @@ const courses = [
       "Thảo luận code review, PR comments",
     ],
     buttonVariant: "courseCareer" as const,
-    featured: true,
+    featured: false,
   },
   {
     id: "mastery",
@@ -98,12 +98,6 @@ const CoursesSection = () => {
                 background: `linear-gradient(135deg, hsl(var(--${course.colorClass}) / 0.3), hsl(var(--${course.colorClass}) / 0.1))`,
               }}
             >
-              {course.featured && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-course-career text-primary-foreground text-sm font-bold">
-                  Phổ biến nhất
-                </div>
-              )}
-
               <div className="bg-card rounded-xl p-6 h-full flex flex-col">
                 {/* Header */}
                 <div className="flex items-center gap-3 mb-4">

@@ -23,15 +23,6 @@ const CTASection = ({ consultOpen, onConsultOpenChange }: CTASectionProps) => {
 
       <div className="container px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Free trial highlight */}
-          <div className="inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-accent/20 border-2 border-accent mb-8 animate-pulse-glow">
-            <Gift className="w-6 h-6 text-accent" />
-            <div className="text-left">
-              <p className="text-lg font-bold text-accent">1 buổi test trình độ + học thử MIỄN PHÍ</p>
-              <p className="text-sm text-accent/80">Đánh giá trình độ và trải nghiệm phương pháp học</p>
-            </div>
-          </div>
-
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6">
             Sẵn sàng <span className="text-gradient">up level</span>?
           </h2>
@@ -47,7 +38,7 @@ const CTASection = ({ consultOpen, onConsultOpenChange }: CTASectionProps) => {
               onClick={() => onConsultOpenChange(true)}
             >
               <Calendar className="w-5 h-5" />
-              Nhận tư vấn lộ trình học tập
+              Đăng ký học thử Miễn phí
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
