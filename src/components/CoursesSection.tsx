@@ -80,7 +80,7 @@ const CoursesSection = () => {
             Lộ trình 3 cấp độ
           </span>
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Lộ trình <span className="text-gradient">3 bước</span> từ Foundation đến Mastery
+            <span className="text-gradient">3 bước</span> từ Foundation đến Mastery
           </h2>
           <p className="text-lg text-muted-foreground">
             3 khóa học nối tiếp nhau. Bạn chọn điểm bắt đầu phù hợp với trình độ hiện tại, sau đó tiếp tục lên level.

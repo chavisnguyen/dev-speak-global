@@ -76,7 +76,7 @@ const stories = [
 
 const SuccessStoriesSection = () => {
   return (
-    <section className="py-24 bg-background relative">
+    <section id="students" className="py-24 bg-background relative scroll-mt-20">
       <div className="container px-4">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <span className="inline-block px-4 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">

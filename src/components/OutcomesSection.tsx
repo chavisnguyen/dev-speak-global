@@ -37,10 +37,10 @@ const OutcomesSection = () => {
             Từ học tập đến thực tiễn
           </span>
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Sau khóa học, bạn sẽ <span className="text-gradient">làm được gì?</span>
+            Sau khóa học, bạn <span className="text-gradient">đạt được gì?</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Đây không phải là lý thuyết suông. Đây là những kỹ năng bạn áp dụng ngay vào công việc.
+            Không phải là lý thuyết suông. Đây là những kỹ năng bạn áp dụng ngay vào công việc.
           </p>
         </div>
 
