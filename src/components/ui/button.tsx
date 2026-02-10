@@ -19,6 +19,7 @@ const buttonVariants = cva(
         heroOutline: "border-2 border-primary/50 text-foreground hover:bg-primary/10 hover:border-primary",
         course: "bg-secondary text-foreground border border-border hover:border-primary/50 hover:bg-secondary/80",
         courseFoundation: "bg-[hsl(var(--course-foundation)/0.1)] text-[hsl(var(--course-foundation))] border border-[hsl(var(--course-foundation)/0.3)] hover:bg-[hsl(var(--course-foundation)/0.2)] hover:border-[hsl(var(--course-foundation)/0.5)]",
+        courseSpeaking: "bg-[hsl(var(--course-speaking)/0.1)] text-[hsl(var(--course-speaking))] border border-[hsl(var(--course-speaking)/0.3)] hover:bg-[hsl(var(--course-speaking)/0.2)] hover:border-[hsl(var(--course-speaking)/0.5)]",
         courseCareer: "bg-[hsl(var(--course-career)/0.1)] text-[hsl(var(--course-career))] border border-[hsl(var(--course-career)/0.3)] hover:bg-[hsl(var(--course-career)/0.2)] hover:border-[hsl(var(--course-career)/0.5)]",
         courseMastery: "bg-[hsl(var(--course-mastery)/0.1)] text-[hsl(var(--course-mastery))] border border-[hsl(var(--course-mastery)/0.3)] hover:bg-[hsl(var(--course-mastery)/0.2)] hover:border-[hsl(var(--course-mastery)/0.5)]",
       },

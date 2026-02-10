@@ -55,20 +55,25 @@ const HeroSection = ({ onOpenConsult }: HeroSectionProps) => {
           </p>
 
           {/* Pathway indicators */}
-          <div className="flex flex-wrap justify-center gap-4 mb-10 animate-fade-up" style={{ animationDelay: "0.4s" }}>
-            <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-course-foundation/10 border border-course-foundation/30">
+          <div className="flex flex-wrap justify-center gap-3 mb-10 animate-fade-up" style={{ animationDelay: "0.4s" }}>
+            <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-course-foundation/10 border border-course-foundation/30">
               <div className="w-3 h-3 rounded-full bg-course-foundation" />
-              <span className="text-sm font-medium">Foundation</span>
+              <span className="text-sm font-medium">Reborn</span>
             </div>
-            <ArrowRight className="w-5 h-5 text-muted-foreground self-center hidden sm:block" />
-            <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-course-career/10 border border-course-career/30">
+            <ArrowRight className="w-4 h-4 text-muted-foreground self-center hidden sm:block" />
+            <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-course-speaking/10 border border-course-speaking/30">
+              <div className="w-3 h-3 rounded-full bg-course-speaking" />
+              <span className="text-sm font-medium">Speaking</span>
+            </div>
+            <ArrowRight className="w-4 h-4 text-muted-foreground self-center hidden sm:block" />
+            <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-course-career/10 border border-course-career/30">
               <div className="w-3 h-3 rounded-full bg-course-career" />
-              <span className="text-sm font-medium">Career</span>
+              <span className="text-sm font-medium">Global Candidate</span>
             </div>
-            <ArrowRight className="w-5 h-5 text-muted-foreground self-center hidden sm:block" />
-            <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-course-mastery/10 border border-course-mastery/30">
+            <ArrowRight className="w-4 h-4 text-muted-foreground self-center hidden sm:block" />
+            <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-course-mastery/10 border border-course-mastery/30">
               <div className="w-3 h-3 rounded-full bg-course-mastery" />
-              <span className="text-sm font-medium">Mastery</span>
+              <span className="text-sm font-medium">Client Mastery</span>
             </div>
           </div>
 

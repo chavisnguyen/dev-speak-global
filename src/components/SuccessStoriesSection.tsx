@@ -61,7 +61,7 @@ const stories = [
       ],
     },
     after: {
-      title: "Sau cả 3 khóa",
+      title: "Sau cả 4 khóa",
       points: [
         "Rating 5.0 với Top Rated badge",
         "Tự tin proposal và demo solution",

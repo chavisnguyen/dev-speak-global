@@ -4,29 +4,34 @@ import { Check, Sparkles, Users, Clock, ArrowRight } from "lucide-react";
 const courses = [
   {
     name: "IT English Reborn",
-    level: "Foundation",
-    price: "120.000đ",
-    total: "960.000đ",
+    level: "Level 1",
     sessions: 8,
+    duration: "8 buổi × 1h",
     color: "course-foundation",
     variant: "courseFoundation" as const,
   },
   {
-    name: "The Global Candidate",
-    level: "Career",
-    price: "140.000đ",
-    total: "1.120.000đ",
-    sessions: 8,
-    color: "course-career",
-    variant: "courseCareer" as const,
+    name: "IT Speaking Foundation",
+    level: "Level 2",
+    sessions: 16,
+    duration: "16 buổi × 60 phút",
+    color: "course-speaking",
+    variant: "courseSpeaking" as const,
     featured: true,
   },
   {
+    name: "Global Candidate",
+    level: "Level 3",
+    sessions: 10,
+    duration: "10 buổi × 1h",
+    color: "course-career",
+    variant: "courseCareer" as const,
+  },
+  {
     name: "Client Mastery",
-    level: "Mastery",
-    price: "160.000đ",
-    total: "1.280.000đ",
+    level: "Level 4",
     sessions: 8,
+    duration: "8 buổi × 1h",
     color: "course-mastery",
     variant: "courseMastery" as const,
   },
@@ -64,16 +69,16 @@ const PricingSection = () => {
         </div>
 
         {/* Pricing cards */}
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-16">
+        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6 max-w-6xl mx-auto mb-16">
           {courses.map((course, index) => (
             <div
               key={index}
               className={`relative rounded-2xl p-6 bg-card border transition-all duration-300 hover:scale-[1.02] ${
-                course.featured ? "border-course-career shadow-lg shadow-course-career/10" : "border-border"
+                course.featured ? "border-course-speaking shadow-lg shadow-course-speaking/10" : "border-border"
               }`}
             >
               {course.featured && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-course-career text-primary-foreground text-xs font-bold flex items-center gap-1">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-course-speaking text-primary-foreground text-xs font-bold flex items-center gap-1">
                   <Sparkles className="w-3 h-3" />
                   Phổ biến nhất
                 </div>
@@ -92,7 +97,7 @@ const PricingSection = () => {
                 <h3 className="text-xl font-bold">{course.name}</h3>
               </div>
 
-              <div className="text-center mb-6" />
+              <p className="text-center mb-6 text-sm text-muted-foreground">{course.duration}</p>
 
               <Button variant={course.variant} className="w-full" asChild>
                 <a href="#consult">
@@ -110,11 +115,11 @@ const PricingSection = () => {
             <div>
               <div className="flex items-center gap-2 mb-2">
                 <Sparkles className="w-5 h-5 text-accent" />
-                <span className="text-sm font-medium text-accent">Combo 3 khóa</span>
+                <span className="text-sm font-medium text-accent">Combo 4 khóa</span>
               </div>
               <h3 className="text-2xl font-bold mb-2">Lộ trình hoàn chỉnh</h3>
               <p className="text-muted-foreground">
-                Đăng ký cả 3 khóa để được giảm 10% và có mentor support xuyên suốt.
+                Đăng ký cả 4 khóa để được giảm 10% và có mentor support xuyên suốt.
               </p>
             </div>
             <div className="text-center md:text-right flex-shrink-0">

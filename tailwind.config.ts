@@ -53,6 +53,7 @@ export default {
         },
         course: {
           foundation: "hsl(var(--course-foundation))",
+          speaking: "hsl(var(--course-speaking))",
           career: "hsl(var(--course-career))",
           mastery: "hsl(var(--course-mastery))",
         },
