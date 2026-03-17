@@ -9,7 +9,6 @@ const forYou = [
 
 const notForYou = [
   "Muốn học tiếng Anh học thuật, IELTS, TOEIC",
-  "Chưa có kinh nghiệm làm việc, muốn học chuyên môn",
   "Tìm kiếm khóa học miễn phí hoặc tự học qua video",
   "Không có thời gian luyện tập",
 ];

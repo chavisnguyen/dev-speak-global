@@ -38,7 +38,7 @@ const ProblemSection = () => {
             Tiếng Anh yếu = <span className="text-destructive">Mất quyền chủ động</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Bạn không thiếu skill kỹ thuật. Bạn thiếu tiếng Anh đúng ngữ cảnh để được lắng nghe.
+            Bạn làm giỏi, nhưng không nói tốt = Giảm lợi thế cạnh tranh
           </p>
         </div>
 

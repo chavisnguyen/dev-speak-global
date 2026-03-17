@@ -49,7 +49,7 @@ const Footer = () => {
               <div className="inline-block p-4 rounded-xl bg-accent/10 border border-accent/30">
                 <p className="text-sm font-bold text-accent mb-1">🎁 Học thử miễn phí</p>
                 <p className="text-xs text-muted-foreground">
-                  1 buổi test trình độ + học thử
+                  1 buổi &quot;bắt bệnh&quot; + test trình độ
                 </p>
               </div>
             </div>

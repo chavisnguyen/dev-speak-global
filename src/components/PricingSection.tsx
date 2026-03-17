@@ -3,7 +3,7 @@ import { Check, Sparkles, Users, Clock, ArrowRight } from "lucide-react";
 
 const courses = [
   {
-    name: "IT English Reborn",
+    name: "IT English Foundation",
     level: "Level 1",
     sessions: 8,
     duration: "8 buổi × 1h",
@@ -20,7 +20,7 @@ const courses = [
     featured: true,
   },
   {
-    name: "Global Candidate",
+    name: "Interview",
     level: "Level 3",
     sessions: 10,
     duration: "10 buổi × 1h",

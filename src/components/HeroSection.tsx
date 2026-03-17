@@ -32,9 +32,13 @@ const HeroSection = ({ onOpenConsult }: HeroSectionProps) => {
               <span className="w-2 h-2 rounded-full bg-primary shrink-0 animate-pulse" aria-hidden />
               <span className="text-sm font-medium text-primary">Online 100%, tương tác trực tiếp</span>
             </div>
+            <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border-2 border-accent bg-accent/20 backdrop-blur-sm shadow-lg shadow-accent/20">
+              <span className="text-base">💰</span>
+              <span className="text-sm font-bold text-accent">Đóng học phí linh hoạt</span>
+            </div>
             <div className="inline-flex items-center gap-3 px-6 py-3 rounded-2xl bg-accent/20 border-2 border-accent text-accent font-bold animate-pulse-glow">
               <span className="text-lg">🎁</span>
-              <span>1 buổi test trình độ + học thử MIỄN PHÍ</span>
+              <span>1 buổi &quot;bắt bệnh&quot; + test trình độ MIỄN PHÍ</span>
             </div>
           </div>
 
@@ -58,7 +62,7 @@ const HeroSection = ({ onOpenConsult }: HeroSectionProps) => {
           <div className="flex flex-wrap justify-center gap-3 mb-10 animate-fade-up" style={{ animationDelay: "0.4s" }}>
             <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-course-foundation/10 border border-course-foundation/30">
               <div className="w-3 h-3 rounded-full bg-course-foundation" />
-              <span className="text-sm font-medium">Reborn</span>
+              <span className="text-sm font-medium">Foundation</span>
             </div>
             <ArrowRight className="w-4 h-4 text-muted-foreground self-center hidden sm:block" />
             <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-course-speaking/10 border border-course-speaking/30">
@@ -68,7 +72,7 @@ const HeroSection = ({ onOpenConsult }: HeroSectionProps) => {
             <ArrowRight className="w-4 h-4 text-muted-foreground self-center hidden sm:block" />
             <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-course-career/10 border border-course-career/30">
               <div className="w-3 h-3 rounded-full bg-course-career" />
-              <span className="text-sm font-medium">Global Candidate</span>
+              <span className="text-sm font-medium">Interview</span>
             </div>
             <ArrowRight className="w-4 h-4 text-muted-foreground self-center hidden sm:block" />
             <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-course-mastery/10 border border-course-mastery/30">

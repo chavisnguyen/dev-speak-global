@@ -1,25 +1,20 @@
-import { Mic2, MessageSquare, Presentation, FileText, CheckCircle2 } from "lucide-react";
+import { Mic2, MessageSquare, Presentation, CheckCircle2 } from "lucide-react";
 
 const outcomes = [
   {
     icon: Mic2,
     title: "Run meeting & stand-up bằng tiếng Anh",
-    description: "Không còn im lặng 3 giây. Báo cáo trôi chảy, tự tin phát biểu ý kiến.",
+    description: "Không còn im lặng, ngập ngừng, hay gật đầu vô nghĩa.",
   },
   {
     icon: MessageSquare,
     title: "Trả lời phỏng vấn IT tự tin",
-    description: "Giải thích experience, discuss technical decisions, ask smart questions.",
+    description: "Thể hiện giá trị bản thân, kinh nghiệm, chuyên môn, kỹ năng xử lý vấn đề.",
   },
   {
     icon: Presentation,
     title: "Dẫn dắt demo & discussion với client",
     description: "Present solution, handle questions, pushback khi cần, xử lý tình huống khó.",
-  },
-  {
-    icon: FileText,
-    title: "Viết email & report chuyên nghiệp",
-    description: "Đúng tone, đúng format, đúng context. Không còn sợ viết tiếng Anh.",
   },
 ];
 
@@ -73,7 +68,7 @@ const OutcomesSection = () => {
             <div>
               <div className="flex items-center justify-center gap-2 mb-2">
                 <CheckCircle2 className="w-5 h-5 text-primary" />
-                <span className="text-3xl font-bold text-foreground">8 buổi</span>
+                <span className="text-3xl font-bold text-foreground">1 giờ/buổi</span>
               </div>
               <p className="text-muted-foreground text-sm">Thời gian ngắn, thực hành hiệu quả</p>
             </div>
@@ -89,7 +84,7 @@ const OutcomesSection = () => {
                 <CheckCircle2 className="w-5 h-5 text-primary" />
                 <span className="text-3xl font-bold text-foreground">1:1</span>
               </div>
-              <p className="text-muted-foreground text-sm">Feedback cá nhân, sửa lỗi ngay tại lớp</p>
+              <p className="text-muted-foreground text-sm">Sửa lỗi tại lớp và ở nhà</p>
             </div>
           </div>
         </div>
