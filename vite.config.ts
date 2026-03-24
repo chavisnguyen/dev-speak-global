@@ -5,6 +5,7 @@ import path from "path";
 // https://vitejs.dev/config/
 export default defineConfig({
   base: process.env.VITE_BASE_PATH || "/",
+  assetsInclude: ["**/*.PNG", "**/*.JPG", "**/*.JPEG"],
   server: {
     host: "::",
     port: 8080,

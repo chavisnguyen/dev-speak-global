@@ -6,6 +6,7 @@ import CoursesSection from "@/components/CoursesSection";
 import OutcomesSection from "@/components/OutcomesSection";
 import SuccessStoriesSection from "@/components/SuccessStoriesSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import FeedbackSection from "@/components/FeedbackSection";
 import WhoIsThisForSection from "@/components/WhoIsThisForSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
@@ -23,6 +24,7 @@ const Index = () => {
         <OutcomesSection />
         <SuccessStoriesSection />
         <TestimonialsSection />
+        <FeedbackSection />
         <WhoIsThisForSection />
         <CTASection consultOpen={consultOpen} onConsultOpenChange={setConsultOpen} />
       </main>

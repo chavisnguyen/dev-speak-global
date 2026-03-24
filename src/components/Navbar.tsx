@@ -7,6 +7,7 @@ import { contactLinks } from "@/data/const";
 const navLinks = [
   { name: "Khóa học", href: "#courses" },
   { name: "Học viên", href: "#students" },
+  { name: "Feedback", href: "#feedback" },
 ];
 
 type NavbarProps = {
