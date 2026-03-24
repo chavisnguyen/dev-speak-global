@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Code2, Menu, X, Mail } from "lucide-react";
+import { Code2, Menu, X } from "lucide-react";
 import { contactLinks } from "@/data/const";
 
 const navLinks = [

@@ -1,6 +1,7 @@
 import zaloIcon from "@/assets/zalo.png";
 import threadIcon from "@/assets/thread.png";
-import { Mail } from "lucide-react";
+import instagramIcon from "@/assets/instagram.png";
+import tiktokIcon from "@/assets/tik-tok.png";
 
 export const contactLinks = [
     {
@@ -16,9 +17,15 @@ export const contactLinks = [
         description: "@dev.englishpro"
     },
     {
-        name: "Email",
-        href: "mailto:dev.englishpro@gmail.com",
-        icon: Mail,
-        description: "dev.englishpro@gmail.com"
+        name: "Instagram",
+        href: "https://www.instagram.com/dev.englishpro",
+        iconImg: instagramIcon,
+        description: "@dev.englishpro"
+    },
+    {
+        name: "TikTok",
+        href: "https://www.tiktok.com/@easy.engspeaking",
+        iconImg: tiktokIcon,
+        description: "@easy.engspeaking"
     },
 ];
