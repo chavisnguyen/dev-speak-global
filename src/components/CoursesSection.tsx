@@ -10,7 +10,7 @@ const courses = [
     icon: BookOpen,
     color: "foundation",
     colorClass: "course-foundation",
-    duration: "8 buổi × 1h",
+    duration: "20 buổi × 1h",
     target: "A1–A2: xây nền ngữ pháp + từ vựng IT trong ngữ cảnh công việc (hardware, software, standup, specs). Chuẩn bị cho bước nói thật.",
     outcomes: [
       "Hiểu và dùng từ vựng IT cơ bản (hardware, software, process, standup, specs)",
@@ -28,7 +28,7 @@ const courses = [
     icon: MessageCircle,
     color: "speaking",
     colorClass: "course-speaking",
-    duration: "16 buổi × 60 phút",
+    duration: "16 buổi × 1h",
     target: "Level B1+. IT general communication. 100% thời lượng nói.",
     outcomes: [
       "Small talk, trả lời nhanh, standup (hôm qua/hôm nay, blocker, tiến độ)",
@@ -47,7 +47,7 @@ const courses = [
     icon: Target,
     color: "career",
     colorClass: "course-career",
-    duration: "10 buổi × 1h",
+    duration: "16 buổi × 1h",
     target: "B1+: interview + CV + cách kể chuyện nghề nghiệp. Portfolio/CV gây ấn tượng, trả lời phỏng vấn chuẩn, strategic progress briefing, handling objections.",
     outcomes: [
       "Viết và trình bày CV/portfolio thu hút nhà tuyển dụng",
@@ -64,7 +64,7 @@ const courses = [
     icon: Rocket,
     color: "mastery",
     colorClass: "course-mastery",
-    duration: "8 buổi × 1h",
+    duration: "20 buổi × 1h",
     target: "B1+ đã làm môi trường global: hiểu phong cách và tâm lý khách hàng, requirement elicitation, cross-functional, Art of \"No\", tư vấn chiến lược, ad-hoc meetings, real-world simulation.",
     outcomes: [
       "Hiểu phong cách và tâm lý khách hàng; hỏi đúng để hiểu sâu",
