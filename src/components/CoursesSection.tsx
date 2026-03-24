@@ -28,7 +28,7 @@ const courses = [
     icon: MessageCircle,
     color: "speaking",
     colorClass: "course-speaking",
-    duration: "16 buổi × 1h",
+    duration: "20 buổi × 1h",
     target: "Level B1+. IT general communication. 100% thời lượng nói.",
     outcomes: [
       "Small talk, trả lời nhanh, standup (hôm qua/hôm nay, blocker, tiến độ)",
@@ -46,7 +46,7 @@ const courses = [
     icon: Target,
     color: "career",
     colorClass: "course-career",
-    duration: "16 buổi × 1h",
+    duration: "15 buổi × 1h",
     target: "B1+: interview + CV + cách kể chuyện nghề nghiệp. Portfolio/CV gây ấn tượng, trả lời phỏng vấn chuẩn, strategic progress briefing, handling objections.",
     outcomes: [
       "Viết và trình bày CV/portfolio thu hút nhà tuyển dụng",
