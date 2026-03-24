@@ -37,7 +37,6 @@ const courses = [
       "Tham gia call với client, demo ngắn khi được hỏi; chat Slack/Teams đúng tone",
     ],
     buttonVariant: "courseSpeaking" as const,
-    featured: true,
   },
   {
     id: "career",
@@ -102,9 +101,7 @@ const CoursesSection = () => {
           {courses.map((course, index) => (
             <div
               key={course.id}
-              className={`relative group rounded-2xl p-1 transition-all duration-300 hover:scale-[1.02] ${
-                course.featured ? "lg:-mt-4 lg:mb-4" : ""
-              }`}
+              className={`relative group rounded-2xl p-1 transition-all duration-300 hover:scale-[1.02]`}
               style={{
                 background: `linear-gradient(135deg, hsl(var(--${course.colorClass}) / 0.3), hsl(var(--${course.colorClass}) / 0.1))`,
               }}
